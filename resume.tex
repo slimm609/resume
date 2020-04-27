@@ -1,0 +1,201 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt,a4paper,roman]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+
+\usepackage[scale=0.80]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Brian M} % Your first name
+\familyname{Davis} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+
+\mobile{(843) 437 5808}
+
+\email{bdavis001@gmail.com}
+\homepage{linkedin.com/in/bdavis001}{Linkedin - bdavis001} 
+\homepage{github.com/slimm609}{Github}
+
+%\extrainfo{additional information}
+%\photo[70pt][0.4pt]{picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+% SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Technical Skills}
+
+\cvitem{Cloud}{AWS, GCP}
+\cvitem{OS}{Linux, Solaris, Windows, Vmware}
+\cvitem{Database}{PostgreSQL, MySQL, RDS}
+\cvitem{Scripting}{Bash, PHP, Python}
+\cvitem{Networking}{Routing \& Switching, Wireless, VOIP, VPN}
+\cvitem{Security}{Backtrack/Kali Linux, Nessus, Retina, Firewalls}
+\cvitem{Other}{Apache, Weblogic, Git, Nginx, Docker, Terraform, Ansible, Packer, Inspec, Kubernetes}
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+\cventry{2017--2019}{Senior DevSecOps Engineer}{\textsc{CipherTrace}}{Remote}{}
+{
+\begin{itemize}
+\item Migrated EC2 and ECS instances to EKS and GKE Kubernetes clusters.
+\item Migrated 20 repositories to a monorepo, allowing for faster development and atomic commits.
+\item Deployed over 20 different types of cryptocurrency nodes to ec2, docker and kubernetes. Managed over 300 blockchain nodes. 
+\item Managed over 700 EC2 instances, 120 Lambdas, 6 ECS clusters, 5 EKS clusters, 3 GKE clusters across 15 aws regions.
+\item Setup and maintained multiple AWS services including EC2, Lambda, S3, EFS, RDS, DynamoDB, ElastiCache, Organizations, Cloudwatch, CloudTrail, Config, Systems manager, CodePipeline, CodeBuild, CodeDeploy, EMR, ElasticSearch, Data Pipeline, and several other services.
+\end{itemize}}
+
+\cventry{2017--2019}{Director of IT Operations}{\textsc{Questis}}{Charleston, SC}{}
+{
+\begin{itemize}
+\item Moved Questis SAAS platform from Heroku to AWS ECS and docker and HA architecture
+\item Designed Node and Python Microservice architecture with Kong API Gateway.
+\item Designed and implemented CI/CD pipeline with Jenkins and Gitlab
+\item Automated Infrastructure with Terraform, Packer, Ansible, Inspec
+\item Migrated 9 repos to a monorepo with full git history
+\item Scaled Production application from 1100 users to over 130,000 users
+\end{itemize}}
+
+\cventry{2016--2017}{Lead Systems and Network Engineer}{\textsc{CACI International}}{Charleston, SC}{}
+{
+\begin{itemize}
+\item Scripted a complete infrastructure deployment of AWS using Terraform including multiple regions and auto-scaling best practices
+\item Developed training material and provided cross training to other engineers on how to read and understand Terraform scripting
+\item Developed and configured CACI lab environment supporting 6 DoD projects and 350+ users
+\item Developed openvpn web interface for VPN access for multiple projects
+\end{itemize}}
+
+\cventry{2014--2016}{Lead Systems and Network Engineer}{\textsc{Strategic Operational Solutions}}{Charleston, SC}{}
+{
+\begin{itemize}
+\item Design and implement Operating system and Application solutions supporting eDTRM for Joint Chief of Staff
+\item Design and Maintain DevOps environment supporting eDTRM, CBP, NAVFAC and other development team supporting over 450 virtual servers
+\item Migrate 250+ users from Exchange to Google Apps for Work, reducing monthly cost by 50\%
+\item Scaled infrastructure from 1 server with 8 virtual machines to 40 servers with over 450 VMs
+\item Implemented version control, document repository, central authentication, logging and update servers.   
+\end{itemize}}
+
+
+%------------LCE-------
+
+\cventry{2013--2014}{Sr. Systems Integrator}{\textsc{Life Cycle Engineering}}{Charleston, SC}{}{%Maintained Veterans Affairs systems and applications supporting Veterans Benefits Management System (VBMS). Provide performance, security, and operational improvements for Linux, Windows, Weblogic, and Information Assurance.
+\begin{itemize}
+\item Provided Linux and Weblogic expertise to further project initiatives and goals
+\item Identified several memory leaks in application and assisted development teams with resolution
+\item Co-authored Weblogic performance and HA optimizations plan, reducing downtime and improving stability
+\item Developed multiple scripts for automation of application deployment allowing for faster recovery and error reduction
+\end{itemize}}
+
+
+%-----------spawar-------------------------------------
+
+\cventry{2007--2013}{Lead Systems Engineer}{\textsc{SPAWAR}}{Charleston, SC}{}{%Maintained Mission Critical Servers supporting Distributed Common Ground Systems -- Navy (DCGS-N) as well as servers and applications supporting Tri-Service Infrastructure Management Program Office -- Medical Health Systems (TIMPO MHS). Delivered email, VPN, DNS, routing/switching, and web services support for Linux, Windows, and Solaris. Advised in security best practices for DCGS partners and family of systems.
+\begin{itemize}
+\item Developed and maintained DoD First Net-Centric Intelligence Integration Backbone
+\item Maintained Solaris 10 environment including patching, hardening and accrediting 30+ servers
+\item Interfaced with multiple agencies including NSA, CIA, DHS, and DoD to achieve DCGS intelligence sharing
+\item Migrated DCGS-N from Solaris 10 Sparc to Rhel 5 Virtual Machines; migrated Oracle databases, Jboss
+Application servers, Authentication servers and other supporting servers
+\item Completed DCGS-N Block 1.5 hardware/software upgrade, enabling virtualization, high availability, and
+redundancy
+\item Improved system security 65\% via Red-Hat Enterprise 5.x hardened installation, including STIG, DCID6/3,
+DoDI8500.2, and NSS-1253 recommendations and best practices
+\end{itemize}}
+
+
+%------red lambda---------------------------
+\cventry{2011--2012}{Subject Matter Expert}{\textsc{Red Lambda}}{Orlando, Fl}{}{%Recruited for subject matter expertise in network/systems security and administration. Contribute to security and functionality improvements for startup company’s software-based distributed processing solution (MetaGrid). Conduct research for product advancements and new features as well as provide testing and QA support.
+\begin{itemize}
+\item Designed and Implemented QA website for submission/tracking of test requests, results, change requests, and mind mapping
+\item Assessed requirements for customer integration and conducted gap analysis regarding pre-established big data solution providers
+\item Engineered API testing infrastructure of Metagrid stress testing
+\item Authored security test plan for Red Lambda, Inc. for increased logical and physical security
+\item Developed MetaGrid requirements analysis for Ret. General Clapper of USDI (Under Secretary of Defense
+for Intelligence) and DNI (Director of National Intelligence)
+\end{itemize}}
+
+%------L3 Shaw---------------------------
+\cventry{2006--2007}{Firewall/Network Tech}{\textsc{L3 Communications}}{Shaw AFB}{}{%Handled maintenance for WAN/LAN message traffic in Network Operations Security Center supporting 30,000+ personnel for computer communications, switching, and cryptographic systems. Managed 40+ Enterprise Sidewinder G2 firewalls for non-secure Internet protocol routed network and secure Internet protocol routed network.
+\begin{itemize}
+\item Developed automated upgrade for 50+ remote Sidewinder G2 firewalls 
+\item Authored installation material for Symantec Mail Security and Solaris 9 for External Mail Gateways
+\item Engineered local update program for 200+ BlueCoat SG proxy appliances
+\item Created Anti-Virus Definition Monitoring script, providing real-time definition status for 20+ remote sites
+\end{itemize}}
+
+%------USAF---------------------------
+\cventry{2002--2006}{Systems/Network Tech}{\textsc{U.S. Air Force}}{Worldwide Venue}{}{%Maintained WAN/LAN message traffic in Network Control Center supporting 4,500+ personnel, including computer communications, switching, and cryptographic systems. Handled installation, troubleshooting, and maintenance on non-secure Internet protocol routed network and secure Internet protocol routed network. 
+\begin{itemize}
+\item Engineered and configured multiple management servers, increasing storage 96\% and speed 87\%
+\item Authored fiber test plan, 20,000+ strands of fiber; boosting troubleshooting and planning effectiveness 90\%
+\item Implemented plan to locate and eliminate rogue wireless access devices reducing vulnerabilities by 30\% 
+\item Project Lead for Moody AFB \textdollar2.8M wireless project, installing 250+ key devices and delivering \textdollar50K in cost savings
+\item Maintained 60+ Taclane KG-175 and KIV-7 bulk encryption devices supporting 5,000+ users
+\end{itemize}}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education/Certifications}
+
+\cvitem{2020}{Amazon AWS -- Certified Solutions Architect - Professional}
+\cvitem{2019}{Amazon AWS -- Certified Solutions Architect - Associate}
+\cvitem{2019}{Amazon AWS -- SysOps Administrator - Associate}
+\cvitem{2013}{VMware VCA -- Data Center Virtualization (VCA--DCV)}
+\cvitem{2008}{Certified Information Systems Security Professional(CISSP)}
+\cvitem{2007}{Microsoft Certified System Engineer (MCSE)}
+\cvitem{2007}{Cisco Certified Network Associate (CCNA) -- exp}
+
+
+%----------------------------------------------------------------------------------------
+
+\end{document}

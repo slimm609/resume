@@ -25,14 +25,14 @@
 
 \documentclass[10pt,a4paper,roman]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
 
-\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvstyle{TYPE} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle', 'banking' and 'fancy'
 
-\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\moderncvcolor{COLOR} % CV color - options include: 'blue' (default), 'burgundy', 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 
-\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+%\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
 
 
-\usepackage[scale=0.80]{geometry} % Reduce document margins
+\usepackage[scale=0.85]{geometry} % Reduce document margins
 %\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
 %\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
 
@@ -40,16 +40,15 @@
 %	NAME AND CONTACT INFORMATION SECTION
 %----------------------------------------------------------------------------------------
 
-\firstname{Brian M} % Your first name
-\familyname{Davis} % Your last name
+\name{Brian}{Davis}
 
 % All information in this block is optional, comment out any lines you don't need
 
 \mobile{(843) 437 5808}
 
 \email{bdavis001@gmail.com}
-\homepage{linkedin.com/in/bdavis001}{Linkedin - bdavis001} 
-\homepage{github.com/slimm609}{Github}
+\social[linkedin]{bdavis001}
+\social[github]{slimm609}
 
 %\extrainfo{additional information}
 %\photo[70pt][0.4pt]{picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
@@ -58,6 +57,8 @@
 %----------------------------------------------------------------------------------------
 
 \begin{document}
+%\COVERPAGE goes here
+
 
 \makecvtitle % Print the CV title
 

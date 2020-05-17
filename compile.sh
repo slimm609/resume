@@ -5,6 +5,7 @@ rm -rf output || true
 
 typeList=('casual' 'oldstyle' 'banking' 'classic')
 colorList=('blue' 'green' 'grey' 'orange' 'purple' 'red')
+#colorList=('orange')
 
 for type in ${typeList[@]}; do
   mkdir -p output/standard/${type}

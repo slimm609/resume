@@ -1,5 +1,5 @@
 FROM debian:10-slim
-LABEL maintainer="brian davis <slimm609@gmail.com>"
+LABEL maintainer="Brian Davis <bdavis001@gmail.com>"
 
 ENV DEBIAN_FRONTEND noninteractive
 
@@ -11,4 +11,3 @@ RUN apt-get update && \
     mkdir /latex
 
 WORKDIR /latex
-CMD ["bash"]

@@ -1,11 +1,12 @@
 #!/usr/bin/env bash
 name=${1:-render}
 
-rm -rf output || true
+rm -rf output 2>/dev/null
 
-typeList=('casual' 'oldstyle' 'banking' 'classic')
-colorList=('blue' 'green' 'grey' 'orange' 'purple' 'red')
+typeList=('casual' 'banking' 'classic')
+colorList=('blue' 'green' 'orange' 'purple' 'red')
 #colorList=('orange')
+#typeList=('casual')
 
 for type in ${typeList[@]}; do
   mkdir -p output/standard/${type}
@@ -19,8 +20,6 @@ done
 
 rm render*
 
-# change type because not all look proper with a cover letter
-typeList=('casual' 'banking' 'classic')
 sed -e '/COVERPAGE/r cover.tex' resume.tex > resume-cover.tex
 for type in ${typeList[@]}; do
   mkdir -p output/cover/${type}

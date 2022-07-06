@@ -2,4 +2,4 @@
 *.out
 *.aux
 **/.DS_Store
-localcover.tex
+**/localcover.tex

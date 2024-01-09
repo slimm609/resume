@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-docker run -v $(pwd)/latex:/latex --rm -it briandavis/latex /latex/compile.sh ${1}
+docker run -v $(pwd)/latex:/latex --rm -it briandavis/latex:latest /latex/compile.sh ${1}
 
 rm -rf output/
 

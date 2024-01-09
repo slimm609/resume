@@ -1,4 +1,4 @@
-FROM debian:10-slim
+FROM debian:stable-slim
 LABEL maintainer="Brian Davis <bdavis001@gmail.com>"
 
 ENV DEBIAN_FRONTEND noninteractive
